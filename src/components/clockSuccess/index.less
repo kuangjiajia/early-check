@@ -1,0 +1,67 @@
+.clock-success {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.4);
+  z-index: 1000;
+  .close-poster {
+    position: absolute;
+    top: 6vw;
+    right: 5vw;
+    width: 5vw;
+    height: 5vw;
+    font-size: 0;
+    &:before {
+      content:'';
+      width:5.5vw;
+      height:2px;
+      border-radius: 0.5px;
+      background:#f67d71;
+      display:block;
+      transform: rotate(45deg);
+    }
+    &:after {
+      content:'';
+      width:5.5vw;
+      height:2px;
+      border-radius: 0.5px;
+      background:#f67d71;
+      display:block;
+      transform:translateY(-2px) rotate(-45deg);
+    }
+  }
+  .posters {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 79.3vw;
+    height: 103.6vw;
+    border-radius: 2vw;
+    background: url("../../static/img/posters.png");
+    background-size: 100% 100%;
+    .day-all {
+      width: 30vw;
+      height: 19vw;
+      margin: 9vw 0 0 7vw;
+      font-size: 12vw;
+      text-align: right;
+    }
+    .contact-day {
+      margin: 10vw 0 0 10vw;
+      font-size: 4vw;
+      color: #f87e71;
+      font-weight: normal;
+    }
+    .generate-poster {
+      margin-top: 34vw;
+      color: #ffad3d;
+      text-align: center;
+      text-decoration: underline;
+    }
+  }
+}

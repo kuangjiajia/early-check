@@ -1,0 +1,9 @@
+@font-face{
+  font-family: "kuangjiajia";
+  src: url("./kuangjiajia.TTF");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "kuangjiajia";
+}
